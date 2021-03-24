@@ -49,7 +49,6 @@ namespace Space_Run
 
         string gameState = "waiting";
 
-        SoundPlayer space = new SoundPlayer(Properties.Resources.Space);
         SoundPlayer go = new SoundPlayer(Properties.Resources.Go);
         SoundPlayer crash = new SoundPlayer(Properties.Resources.Crash);
         SoundPlayer winner = new SoundPlayer(Properties.Resources.Winner);
@@ -68,19 +67,15 @@ namespace Space_Run
                 //The keys for player control
                 case Keys.W:
                     wDown = true;
-                    space.Play();
                     break;
                 case Keys.S:
                     sDown = true;
-                    space.Play();
                     break;
                 case Keys.Up:
                     upArrowDown = true;
-                    space.Play();
                     break;
                 case Keys.Down:
                     downArrowDown = true;
-                    space.Play();
                     break;
                 #endregion
                 #region Space Key
@@ -182,6 +177,7 @@ namespace Space_Run
             //This state is used when the game ends
             else if (gameState == "over")
             {
+                gameTimer.Enabled = false;
                 if (player1Score == 3)
                 {                    
                     titleLabel.Text = "USSR Wins!";
@@ -303,11 +299,13 @@ namespace Space_Run
             if (player1Score == 3)
             {
                 gameState = "over";
+                gameTimer.Enabled = false;
                 winner.Play();
             }
             else if (player2Score == 3)
             {
                 gameState = "over";
+                gameTimer.Enabled = false;
                 winner.Play();
             }
             #endregion

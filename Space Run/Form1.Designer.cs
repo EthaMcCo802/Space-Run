@@ -75,7 +75,7 @@ namespace Space_Run
             this.titleLabel.BackColor = System.Drawing.Color.Transparent;
             this.titleLabel.Font = new System.Drawing.Font("Consolas", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.titleLabel.Location = new System.Drawing.Point(201, 123);
+            this.titleLabel.Location = new System.Drawing.Point(211, 123);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(0, 70);
             this.titleLabel.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace Space_Run
             this.subTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.subTitleLabel.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subTitleLabel.ForeColor = System.Drawing.Color.GhostWhite;
-            this.subTitleLabel.Location = new System.Drawing.Point(12, 269);
+            this.subTitleLabel.Location = new System.Drawing.Point(22, 273);
             this.subTitleLabel.Name = "subTitleLabel";
             this.subTitleLabel.Size = new System.Drawing.Size(0, 36);
             this.subTitleLabel.TabIndex = 3;
